@@ -1,0 +1,128 @@
+.game-list {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0.5px solid #ebebeb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-info {
+  display: grid;
+  grid-template-columns: 70px 150px 150px 150px 150px; /* ID | Name | Price | Release */
+  column-gap: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.game-actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-update {
+  background-color: #3498db;
+  color: white;
+}
+
+.game-actions button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  padding-left: 20px;
+}
+
+.category {
+  padding: 6px 3px 6px 12px;
+}
+
+.game-id,
+.game-name,
+.game-price,
+.game-genre {
+  text-align: left;
+}
+
+/* Медиа для маленьких экранов */
+
+@media (max-width: 890px) {
+  .game-info {
+    grid-template-columns: 200px 200px; /* 2 колонки */
+    grid-template-areas:
+      "id name"
+      "price genre";
+    row-gap: 20px;
+  }
+
+  .game-id {
+    grid-area: id;
+  }
+  .game-name {
+    grid-area: name;
+  }
+  .game-price {
+    grid-area: price;
+  }
+  .game-genre {
+    grid-area: genre;
+  }
+
+  .game-id,
+  .game-name,
+  .game-price,
+  .game-genre {
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .game-info {
+    grid-template-columns: 160px 160px; /* 2 колонки */
+  }
+}
+@media (max-width: 520px) {
+  .game-info {
+    grid-template-columns: 130px 130px; /* 2 колонки */
+  }
+}
+@media (max-width: 430px) {
+  .game-item {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .game-info {
+    grid-template-columns: 1fr ; /* 2 колонки */
+    grid-template-areas:
+      "id"
+      "name"
+      "price"
+      "genre";
+  }
+}
