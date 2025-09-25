@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/my-game-stroe/static/css/main.31d6c0d8.css",
-    "main.js": "/my-game-stroe/static/js/main.363098d8.js",
+    "main.js": "/my-game-stroe/static/js/main.c1941396.js",
     "static/js/453.c211afd3.chunk.js": "/my-game-stroe/static/js/453.c211afd3.chunk.js",
     "index.html": "/my-game-stroe/index.html",
     "main.31d6c0d8.css.map": "/my-game-stroe/static/css/main.31d6c0d8.css.map",
-    "main.363098d8.js.map": "/my-game-stroe/static/js/main.363098d8.js.map",
+    "main.c1941396.js.map": "/my-game-stroe/static/js/main.c1941396.js.map",
     "453.c211afd3.chunk.js.map": "/my-game-stroe/static/js/453.c211afd3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6c0d8.css",
-    "static/js/main.363098d8.js"
+    "static/js/main.c1941396.js"
   ]
 }
