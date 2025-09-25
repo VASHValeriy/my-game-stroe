@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5129/games";
+const API_URL = "https://gamestore.onrender.com/games";
 
 export const getGames = (id) => axios.get(id ? `${API_URL}/${id}` : API_URL);
 export const addGames = (game) => axios.post(API_URL, game);

@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5129/genres";
+const API_URL = "https://gamestore.onrender.com/genres";
 
 export const getGenres = () => axios.get(API_URL);
